@@ -17,15 +17,15 @@ export interface Options {
     } | boolean;
 }
 
-export interface Product {
+export interface Products {
 [x: string]: any;
     items: Product[];
-    name: string;
     total: number;
-    page: number;
+    name: string;
+    page?: number;
     image: string;
-    perPage: number;
-    totalPages: number;
+    perPage?: number;
+    totalPages?: number;
 }
 
 export interface Product {
