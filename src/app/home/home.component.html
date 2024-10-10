@@ -21,6 +21,8 @@
         [rows]="row" 
         [totalRecords]="totalRecords" 
         [rowsPerPageOptions]="[4, 8, 16]"
+        (onPageChange)="onPageChange($event)"
+        #paginator
     ></p-paginator>
 
 </div>

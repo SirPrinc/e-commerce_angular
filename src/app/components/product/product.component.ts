@@ -26,6 +26,7 @@ export class ProductComponent {
   }
 
   @ViewChild('deleteButton') deleteButton:any;
+
   @Input() product!: Product;
   @Output() edit: EventEmitter<Product> = new EventEmitter<Product>();
   @Output() delete: EventEmitter<Product> = new EventEmitter<Product>();
